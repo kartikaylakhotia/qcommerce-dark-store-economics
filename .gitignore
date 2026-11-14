@@ -1,0 +1,5 @@
+__pycache__/
+.pytest_cache/
+*.pyc
+deck/deck_data.json
+node_modules/
