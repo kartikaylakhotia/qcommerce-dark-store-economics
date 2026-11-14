@@ -1,0 +1,82 @@
+{
+  "latest_quarter": "Q2FY27",
+  "blinkit": {
+    "orders_per_store_day": 1718,
+    "contribution_per_order": 28,
+    "overhead_per_store_day": 40228,
+    "breakeven_orders_per_store_day": 1435,
+    "margin_of_safety_pct": 19.7,
+    "first_ebitda_positive_quarter": "Q3FY26",
+    "contribution_needed_for_5pct_margin": [
+      {
+        "orders_per_store_day": 1718,
+        "required_contribution_per_order": 49.7
+      },
+      {
+        "orders_per_store_day": 2000,
+        "required_contribution_per_order": 46.4
+      },
+      {
+        "orders_per_store_day": 2500,
+        "required_contribution_per_order": 42.3
+      }
+    ],
+    "sensitivity": [
+      {
+        "driver": "Contribution per order",
+        "minus_10pct": 1595,
+        "plus_10pct": 1305,
+        "base": 1435
+      },
+      {
+        "driver": "Overhead per store-day",
+        "minus_10pct": 1292,
+        "plus_10pct": 1579,
+        "base": 1435
+      }
+    ]
+  },
+  "instamart": {
+    "orders_per_store_day": 1192,
+    "contribution_per_order": -7.1,
+    "overhead_per_store_day": 73436,
+    "gap_per_order": 68.7,
+    "gap_pct_of_aov": 9.7,
+    "required_contribution_by_throughput": [
+      {
+        "orders_per_store_day": 1192,
+        "required_contribution_per_order": 61.6
+      },
+      {
+        "orders_per_store_day": 1400,
+        "required_contribution_per_order": 52.5
+      },
+      {
+        "orders_per_store_day": 1718,
+        "required_contribution_per_order": 42.7
+      },
+      {
+        "orders_per_store_day": 2000,
+        "required_contribution_per_order": 36.7
+      },
+      {
+        "orders_per_store_day": 2500,
+        "required_contribution_per_order": 29.4
+      }
+    ],
+    "levers": {
+      "start_gap_per_order": 68.7,
+      "lever1_throughput_per_order": 18.9,
+      "lever2_overhead_per_order": 8.5,
+      "lever3_contribution_per_order": 41.3,
+      "lever3_contribution_pct_of_aov": 5.8,
+      "target_contribution_per_order": 34.2,
+      "target_contribution_pct_of_aov": 4.8,
+      "assumptions": {
+        "target_throughput": 1718.095238095238,
+        "overhead_cut": 0.2
+      }
+    }
+  },
+  "reported_data_points": 180
+}
